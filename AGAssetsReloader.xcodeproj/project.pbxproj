@@ -45,7 +45,6 @@
 		3AFC4D0A23981774007B4CF9 /* AGThemePackCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4CE823981774007B4CF9 /* AGThemePackCollectionViewController.m */; };
 		3AFC4D0B23981774007B4CF9 /* AGLanguageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4CE923981774007B4CF9 /* AGLanguageCollectionViewController.m */; };
 		3AFC4D0C23981774007B4CF9 /* AGThemePackCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4CEB23981774007B4CF9 /* AGThemePackCollectionViewCell.m */; };
-		3AFC4D0E23981A4E007B4CF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC4D0D23981A4E007B4CF9 /* README.md */; };
 		6310A07353B8958CB0E448FA /* libPods-AGAssetsReloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 985C6DA021B782790F7971F6 /* libPods-AGAssetsReloader.a */; };
 /* End PBXBuildFile section */
 
@@ -452,7 +451,6 @@
 				3AFC4D0323981774007B4CF9 /* LocalizationCantonese.strings in Resources */,
 				3AFC4C9623981699007B4CF9 /* LaunchScreen.storyboard in Resources */,
 				3AFC4C9323981699007B4CF9 /* Assets.xcassets in Resources */,
-				3AFC4D0E23981A4E007B4CF9 /* README.md in Resources */,
 				3AFC4D0123981774007B4CF9 /* LocalizationEnglish.strings in Resources */,
 				3AFC4C9123981698007B4CF9 /* Main.storyboard in Resources */,
 				3AFC4D0223981774007B4CF9 /* LocalizationChinese.strings in Resources */,

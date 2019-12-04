@@ -4,7 +4,7 @@
 //
 //  Created by JohnnyB0Y on 2019/12/1.
 //  Copyright © 2019 JohnnyB0Y. All rights reserved.
-//
+//  语言包集合
 
 #import <UIKit/UIKit.h>
 #import "AGBaseAssets.h"

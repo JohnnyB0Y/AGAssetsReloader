@@ -1,0 +1,36 @@
+PODS:
+  - AGCategories (0.1.9)
+  - AGTimerManager (0.5.2)
+  - AGVerifyManager (0.3.6)
+  - AGViewModel (0.6.28)
+  - Masonry (1.1.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - AGCategories (~> 0.1)
+  - AGTimerManager (~> 0.5)
+  - AGVerifyManager (~> 0.3)
+  - AGViewModel (~> 0.6)
+  - Masonry
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - AGCategories
+    - AGTimerManager
+    - AGVerifyManager
+    - AGViewModel
+    - Masonry
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  AGCategories: 1cee263e808a674b2ddd44ccf5d0aeb7221ba90e
+  AGTimerManager: 249c1e8b7e72cf0d72f01a89014c7eb3b9605eee
+  AGVerifyManager: 06b18b51045918ec4c15fa0d29d6898bf07a357d
+  AGViewModel: 114142e14f14bf1262bfdd3f3199ee971467f7eb
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 0582a0d04552743777568806f2ebedde73dfbe8d
+
+COCOAPODS: 1.8.4
