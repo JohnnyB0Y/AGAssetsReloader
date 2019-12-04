@@ -1,0 +1,9 @@
+/* 
+  LocalizationEnglish.strings
+  AGThemeManager
+
+  Created by JohnnyB0Y on 2019/12/1.
+  Copyright © 2019 JohnnyB0Y. All rights reserved.
+*/
+cellTitle = "MIT License";
+cellText = "short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.";

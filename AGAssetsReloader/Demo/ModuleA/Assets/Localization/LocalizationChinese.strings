@@ -1,0 +1,9 @@
+/* 
+  LocalizationChinese.strings
+  AGThemeManager
+
+  Created by JohnnyB0Y on 2019/12/1.
+  Copyright © 2019 JohnnyB0Y. All rights reserved.
+*/
+cellTitle = "MIT 许可证";
+cellText = "简短和简单的许可，条件仅要求保留版权和许可通知。许可的作品、修改和较大的作品可以在不同的条款下发布，并且没有源代码。";

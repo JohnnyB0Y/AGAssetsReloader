@@ -1,0 +1,10 @@
+/* 
+  LocalizationCantonese.strings
+  AGThemeManager
+  粤语
+  Created by JohnnyB0Y on 2019/12/2.
+  Copyright © 2019 JohnnyB0Y. All rights reserved.
+*/
+
+cellTitle = "MIT 中意尼";
+cellText = "尼知唔知，我中意尼。";
