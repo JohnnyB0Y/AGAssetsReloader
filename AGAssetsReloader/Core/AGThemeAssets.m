@@ -21,6 +21,7 @@ FOUNDATION_EXTERN NSString * const kAGThemeUsingPackName;
 @property (nonatomic, copy) UIContentSizeCategory currentContentSizeCategory;
 @property (nonatomic, assign) NSInteger fontScaleSize;
 @property (nonatomic, strong) NSMutableDictionary<NSString *, NSNumber *> *fontSizeOffsetDictM;
+@property (nonatomic, strong) UITraitCollection *systemTraitCollection; /// 记录系统模式是否切换
 
 @end
 
@@ -37,11 +38,8 @@ FOUNDATION_EXTERN NSString * const kAGThemeUsingPackName;
 - (BOOL)ag_neededReloadWithTraitCollection:(UITraitCollection *)traitCollection forPackName:(NSString *)packName
 {
     if ([AGAssetsReloader.sharedInstance ag_followSystemStateForKey:kAGThemeFollowSystemState]) { // 跟随系统模式
-        self.prevTraintCollection = traitCollection;
         return ! [self ag_isUsingPackName:self.systemPackName];
     }
-    
-    self.prevTraintCollection = traitCollection;
     return [super ag_neededReloadWithTraitCollection:traitCollection forPackName:packName];
 }
 
@@ -70,11 +68,11 @@ FOUNDATION_EXTERN NSString * const kAGThemeUsingPackName;
 
 - (NSString *)systemPackName
 {
-    if (self.prevTraintCollection != [UIScreen mainScreen].traitCollection) {
+    if (self.systemTraitCollection != [UIScreen mainScreen].traitCollection) {
         if (_followSystemThemeHandleBlock) {
             _systemPackName = _followSystemThemeHandleBlock([UIScreen mainScreen].traitCollection);
         }
-        self.prevTraintCollection = [UIScreen mainScreen].traitCollection;
+        self.systemTraitCollection = [UIScreen mainScreen].traitCollection;
     }
     return _systemPackName;
 }

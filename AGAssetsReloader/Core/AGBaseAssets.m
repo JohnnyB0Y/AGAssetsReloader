@@ -75,7 +75,7 @@
 
 - (void)ag_executeReloadResponder:(id<UITraitEnvironment>)responder
 {
-    [responder traitCollectionDidChange:[UIScreen mainScreen].traitCollection];
+    [responder traitCollectionDidChange:nil];
 }
 
 - (BOOL)ag_isUsingPackName:(NSString *)packName
@@ -115,7 +115,7 @@
 {
     if (_currentPackName) {
         [self.weakHashTable.allObjects enumerateObjectsUsingBlock:^(id<UITraitEnvironment> obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [obj traitCollectionDidChange:self->_prevTraintCollection];
+            [obj traitCollectionDidChange:nil];
         }];
     }
 }

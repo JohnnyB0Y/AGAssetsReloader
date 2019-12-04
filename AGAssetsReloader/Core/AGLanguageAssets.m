@@ -24,12 +24,8 @@ FOUNDATION_EXTERN NSString * const kAGLanguageUsingPackName;
 - (BOOL)ag_neededReloadWithTraitCollection:(UITraitCollection *)traitCollection forPackName:(NSString *)packname
 {
     if ([AGAssetsReloader.sharedInstance ag_followSystemStateForKey:kAGLanguageFollowSystemState]) {
-        
-        self.prevTraintCollection = traitCollection;
         return ! [self ag_isUsingPackName:self.systemPackName];
     }
-    
-    self.prevTraintCollection = traitCollection;
     return [super ag_neededReloadWithTraitCollection:traitCollection forPackName:packname];
 }
 

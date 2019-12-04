@@ -27,9 +27,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString *defaultPackName;
 @property (nonatomic, copy, readonly) NSString *systemPackName;
 
-/// 上一个环境变量集
-@property (nonatomic, strong) UITraitCollection *prevTraintCollection;
-
 /// 判断是否当前使用中的包名
 - (BOOL)ag_isUsingPackName:(NSString *)packName;
 
