@@ -31,6 +31,7 @@
 - (void)setup
 {
     self.title = @"列表";
+    self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"更换主题" style:UIBarButtonItemStyleDone target:self action:@selector(rightItemClick:)];
     self.navigationItem.rightBarButtonItem = rightItem;

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3C37C6239B5018004B7C72 /* AGReusePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C37C2239B5017004B7C72 /* AGReusePool.m */; };
+		3A3C37C7239B5018004B7C72 /* AGArrangedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C37C5239B5017004B7C72 /* AGArrangedView.m */; };
 		3AFC4C8823981698007B4CF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4C8723981698007B4CF9 /* AppDelegate.m */; };
 		3AFC4C8E23981698007B4CF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4C8D23981698007B4CF9 /* ViewController.m */; };
 		3AFC4C9123981698007B4CF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC4C8F23981698007B4CF9 /* Main.storyboard */; };
@@ -50,6 +52,10 @@
 
 /* Begin PBXFileReference section */
 		0E1F8672F0ECBE57F90C2DF7 /* Pods-AGAssetsReloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGAssetsReloader.release.xcconfig"; path = "Target Support Files/Pods-AGAssetsReloader/Pods-AGAssetsReloader.release.xcconfig"; sourceTree = "<group>"; };
+		3A3C37C2239B5017004B7C72 /* AGReusePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGReusePool.m; sourceTree = "<group>"; };
+		3A3C37C3239B5017004B7C72 /* AGArrangedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGArrangedView.h; sourceTree = "<group>"; };
+		3A3C37C4239B5017004B7C72 /* AGReusePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGReusePool.h; sourceTree = "<group>"; };
+		3A3C37C5239B5017004B7C72 /* AGArrangedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGArrangedView.m; sourceTree = "<group>"; };
 		3AFC4C8323981698007B4CF9 /* AGAssetsReloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGAssetsReloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFC4C8623981698007B4CF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3AFC4C8723981698007B4CF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,6 +145,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A3C37C1239B5017004B7C72 /* ArrangedView */ = {
+			isa = PBXGroup;
+			children = (
+				3A3C37C3239B5017004B7C72 /* AGArrangedView.h */,
+				3A3C37C5239B5017004B7C72 /* AGArrangedView.m */,
+				3A3C37C4239B5017004B7C72 /* AGReusePool.h */,
+				3A3C37C2239B5017004B7C72 /* AGReusePool.m */,
+			);
+			path = ArrangedView;
+			sourceTree = "<group>";
+		};
 		3AFC4C7A23981698007B4CF9 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +177,7 @@
 		3AFC4C8523981698007B4CF9 /* AGAssetsReloader */ = {
 			isa = PBXGroup;
 			children = (
+				3A3C37C1239B5017004B7C72 /* ArrangedView */,
 				3AFC4C9F23981774007B4CF9 /* Core */,
 				3AFC4CB423981774007B4CF9 /* Demo */,
 				3AFC4C8623981698007B4CF9 /* AppDelegate.h */,
@@ -508,6 +526,7 @@
 			files = (
 				3AFC4D0023981774007B4CF9 /* AGAssetsModuleA.m in Sources */,
 				3AFC4CF223981774007B4CF9 /* AGBaseAssetsConfig.m in Sources */,
+				3A3C37C7239B5018004B7C72 /* AGArrangedView.m in Sources */,
 				3AFC4D0423981774007B4CF9 /* AGMainTableViewController.m in Sources */,
 				3AFC4CF423981774007B4CF9 /* AGAssetsStateRecorder.m in Sources */,
 				3AFC4CF723981774007B4CF9 /* AGLightThemePackB.m in Sources */,
@@ -522,6 +541,7 @@
 				3AFC4CEF23981774007B4CF9 /* AGAssetsConfig+AGThemeAssets.m in Sources */,
 				3AFC4CF623981774007B4CF9 /* AGPurpleThemePack.m in Sources */,
 				3AFC4D0B23981774007B4CF9 /* AGLanguageCollectionViewController.m in Sources */,
+				3A3C37C6239B5018004B7C72 /* AGReusePool.m in Sources */,
 				3AFC4CFF23981774007B4CF9 /* AGDarkThemePackA.m in Sources */,
 				3AFC4C8E23981698007B4CF9 /* ViewController.m in Sources */,
 				3AFC4D0A23981774007B4CF9 /* AGThemePackCollectionViewController.m in Sources */,
