@@ -6,13 +6,13 @@
 //  Copyright © 2019 JohnnyB0Y. All rights reserved.
 //
 
-#import "AGBaseAssetsConfig.h"
+#import "AGBaseAssetsBox.h"
 #import "AGAssetsConfig+AGThemeAssets.h"
 #import "AGAssetsConfig+AGLanguageAssets.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AGAssetsModuleB : AGBaseAssetsConfig
+@interface AGAssetsModuleB : AGBaseAssetsBox
 
 + (void)reloadThemeAssetsForPackName:(NSString *)packName;
 

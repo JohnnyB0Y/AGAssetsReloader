@@ -1,5 +1,5 @@
 //
-//  AGBaseAssetsConfig+AGLanguageAssets.m
+//  AGBaseAssetsBox+AGLanguageAssets.m
 //  AGAssetsReloader
 //
 //  Created by JohnnyB0Y on 2019/12/4.
@@ -9,7 +9,7 @@
 #import "AGAssetsConfig+AGLanguageAssets.h"
 #import "AGAssetsReloader.h"
 
-@implementation AGBaseAssetsConfig (AGLanguageAssets)
+@implementation AGBaseAssetsBox (AGLanguageAssets)
 
 #pragma mark - 对语言重载响应者的相关操作
 /// 添加语言重载支持

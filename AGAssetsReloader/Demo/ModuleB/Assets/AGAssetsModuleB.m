@@ -19,7 +19,7 @@
 + (AGBaseAssets *)ag_assetsForName:(NSString *)name
 {
     if ([name isEqualToString:kAGThemeAssetsName]) {
-        AGThemeAssets *collection = (id)[self ag_assetsWithName:name];
+        static AGThemeAssets *collection;
         if (nil == collection) {
             
             // 配置模块主题

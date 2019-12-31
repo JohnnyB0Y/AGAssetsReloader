@@ -1,5 +1,5 @@
 //
-//  AGBaseAssetsConfig+AGThemeAssets.m
+//  AGBaseAssetsBox+AGThemeAssets.m
 //  AGAssetsReloader
 //
 //  Created by JohnnyB0Y on 2019/12/4.
@@ -10,7 +10,7 @@
 #import "AGAssetsReloader.h"
 #import "AGThemePack.h"
 
-@implementation AGBaseAssetsConfig (AGThemeAssets)
+@implementation AGBaseAssetsBox (AGThemeAssets)
 
 + (AGThemeAssets *)currentThemeAssets
 {

@@ -1,17 +1,17 @@
 //
-//  AGBaseAssetsConfig+AGLanguageAssets.h
+//  AGBaseAssetsBox+AGLanguageAssets.h
 //  AGAssetsReloader
 //
 //  Created by JohnnyB0Y on 2019/12/4.
 //  Copyright © 2019 JohnnyB0Y. All rights reserved.
 //
 
-#import "AGBaseAssetsConfig.h"
+#import "AGBaseAssetsBox.h"
 #import "AGLanguageAssets.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AGBaseAssetsConfig (AGLanguageAssets)
+@interface AGBaseAssetsBox (AGLanguageAssets)
 
 #pragma mark - 对语言重载响应者的相关操作
 /// 添加语言重载支持

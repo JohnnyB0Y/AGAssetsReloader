@@ -20,7 +20,7 @@
 		3AFC4CEF23981774007B4CF9 /* AGAssetsConfig+AGThemeAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4CA723981774007B4CF9 /* AGAssetsConfig+AGThemeAssets.m */; };
 		3AFC4CF023981774007B4CF9 /* AGAssetsConfig+AGLanguageAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4CAA23981774007B4CF9 /* AGAssetsConfig+AGLanguageAssets.m */; };
 		3AFC4CF123981774007B4CF9 /* AGAssetsReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4CAC23981774007B4CF9 /* AGAssetsReloader.m */; };
-		3AFC4CF223981774007B4CF9 /* AGBaseAssetsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4CAE23981774007B4CF9 /* AGBaseAssetsConfig.m */; };
+		3AFC4CF223981774007B4CF9 /* AGBaseAssetsBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4CAE23981774007B4CF9 /* AGBaseAssetsBox.m */; };
 		3AFC4CF323981774007B4CF9 /* AGBaseAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4CAF23981774007B4CF9 /* AGBaseAssets.m */; };
 		3AFC4CF423981774007B4CF9 /* AGAssetsStateRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4CB023981774007B4CF9 /* AGAssetsStateRecorder.m */; };
 		3AFC4CF523981774007B4CF9 /* AGThemePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC4CB323981774007B4CF9 /* AGThemePack.m */; };
@@ -68,7 +68,7 @@
 		3AFC4C9823981699007B4CF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3AFC4CA023981774007B4CF9 /* AGAssetsStateRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAssetsStateRecorder.h; sourceTree = "<group>"; };
 		3AFC4CA123981774007B4CF9 /* AGBaseAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBaseAssets.h; sourceTree = "<group>"; };
-		3AFC4CA223981774007B4CF9 /* AGBaseAssetsConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBaseAssetsConfig.h; sourceTree = "<group>"; };
+		3AFC4CA223981774007B4CF9 /* AGBaseAssetsBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBaseAssetsBox.h; sourceTree = "<group>"; };
 		3AFC4CA323981774007B4CF9 /* AGAssetsReloadProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAssetsReloadProtocol.h; sourceTree = "<group>"; };
 		3AFC4CA423981774007B4CF9 /* AGThemeAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGThemeAssets.m; sourceTree = "<group>"; };
 		3AFC4CA523981774007B4CF9 /* AGLanguageAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLanguageAssets.m; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		3AFC4CAB23981774007B4CF9 /* AGThemePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGThemePack.h; sourceTree = "<group>"; };
 		3AFC4CAC23981774007B4CF9 /* AGAssetsReloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAssetsReloader.m; sourceTree = "<group>"; };
 		3AFC4CAD23981774007B4CF9 /* AGThemeAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGThemeAssets.h; sourceTree = "<group>"; };
-		3AFC4CAE23981774007B4CF9 /* AGBaseAssetsConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGBaseAssetsConfig.m; sourceTree = "<group>"; };
+		3AFC4CAE23981774007B4CF9 /* AGBaseAssetsBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGBaseAssetsBox.m; sourceTree = "<group>"; };
 		3AFC4CAF23981774007B4CF9 /* AGBaseAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGBaseAssets.m; sourceTree = "<group>"; };
 		3AFC4CB023981774007B4CF9 /* AGAssetsStateRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAssetsStateRecorder.m; sourceTree = "<group>"; };
 		3AFC4CB123981774007B4CF9 /* AGLanguageAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLanguageAssets.h; sourceTree = "<group>"; };
@@ -204,8 +204,8 @@
 				3AFC4CB023981774007B4CF9 /* AGAssetsStateRecorder.m */,
 				3AFC4CA123981774007B4CF9 /* AGBaseAssets.h */,
 				3AFC4CAF23981774007B4CF9 /* AGBaseAssets.m */,
-				3AFC4CA223981774007B4CF9 /* AGBaseAssetsConfig.h */,
-				3AFC4CAE23981774007B4CF9 /* AGBaseAssetsConfig.m */,
+				3AFC4CA223981774007B4CF9 /* AGBaseAssetsBox.h */,
+				3AFC4CAE23981774007B4CF9 /* AGBaseAssetsBox.m */,
 				3AFC4CB123981774007B4CF9 /* AGLanguageAssets.h */,
 				3AFC4CA523981774007B4CF9 /* AGLanguageAssets.m */,
 				3AFC4CAD23981774007B4CF9 /* AGThemeAssets.h */,
@@ -525,7 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AFC4D0023981774007B4CF9 /* AGAssetsModuleA.m in Sources */,
-				3AFC4CF223981774007B4CF9 /* AGBaseAssetsConfig.m in Sources */,
+				3AFC4CF223981774007B4CF9 /* AGBaseAssetsBox.m in Sources */,
 				3A3C37C7239B5018004B7C72 /* AGArrangedView.m in Sources */,
 				3AFC4D0423981774007B4CF9 /* AGMainTableViewController.m in Sources */,
 				3AFC4CF423981774007B4CF9 /* AGAssetsStateRecorder.m in Sources */,

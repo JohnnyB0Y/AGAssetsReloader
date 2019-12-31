@@ -1,5 +1,5 @@
 //
-//  AGBaseAssetsConfig.h
+//  AGBaseAssetsBox.h
 //  AGAssetsReloader
 //
 //  Created by JohnnyB0Y on 2019/12/1.
@@ -10,12 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AGBaseAssetsConfig : NSObject
+@interface AGBaseAssetsBox : NSObject
 
 /**
 思路是这样的：
 1，当一个模块有自己的AGThemeAssets；
-2，那么就派生一个AGThemeConfig的子类，获取当前模块的AGThemeAssets对象，可以用静态变量在内部做缓存；
+2，那么就派生一个AGBaseAssetsBox的子类，获取当前模块的AGThemeAssets对象，可以用静态变量在内部做缓存；
 3，该子类还可以用类方法定义模块用到的颜色、图片、文字等；
 4，在View用到的地方，直接使用类方法获取；
 */
@@ -33,8 +33,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)ag_registerAssets:(AGBaseAssets *)assets forName:name;
 
-
-+ (AGBaseAssets *)ag_assetsWithName:(NSString *)name;
 
 @end
 

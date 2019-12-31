@@ -1,17 +1,17 @@
 //
-//  AGBaseAssetsConfig+AGThemeAssets.h
+//  AGBaseAssetsBox+AGThemeAssets.h
 //  AGAssetsReloader
 //
 //  Created by JohnnyB0Y on 2019/12/4.
 //  Copyright © 2019 JohnnyB0Y. All rights reserved.
 //  主题资产
 
-#import "AGBaseAssetsConfig.h"
+#import "AGBaseAssetsBox.h"
 #import "AGThemeAssets.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AGBaseAssetsConfig (AGThemeAssets)
+@interface AGBaseAssetsBox (AGThemeAssets)
 
 #pragma mark - 对主题重载响应者的相关操作
 /// 添加主题重载支持
