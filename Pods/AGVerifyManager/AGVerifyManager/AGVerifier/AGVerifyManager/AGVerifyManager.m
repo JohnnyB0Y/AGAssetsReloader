@@ -196,12 +196,20 @@ NSString * const kAGVerifyManagerCompletionBlock = @"kAGVerifyManagerCompletion
                    completion:(NS_NOESCAPE AGVerifyManagerCompletionBlock)completionBlock
 {
     verifyingBlock ? verifyingBlock(manager) : nil;
-    dispatch_async(dispatch_get_main_queue(), ^{
+    if ([NSThread isMainThread]) {
         completionBlock ? completionBlock(manager->_firstError, manager->_errorsM) : nil;
         // 清空数据
         manager->_firstError = nil;
         [manager->_errorsM removeAllObjects];
-    });
+    }
+    else {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completionBlock ? completionBlock(manager->_firstError, manager->_errorsM) : nil;
+            // 清空数据
+            manager->_firstError = nil;
+            [manager->_errorsM removeAllObjects];
+        });
+    }
 }
 
 #pragma mark - ----------- Getter Methods ----------

@@ -440,6 +440,11 @@ static void *kAGTMTimerStrongToWeakMapTableProperty = &kAGTMTimerStrongToWeakMap
 
 @implementation AGTimerManager
 
++ (AGTimerManager *)defaultInstance
+{
+    return [[self alloc] init];
+}
+
 #pragma mark 共享定时器🍩
 - (void) ag_prepareTaskTimer:(NSString **)timerKey
                     interval:(NSTimeInterval)ti
@@ -531,7 +536,7 @@ static void *kAGTMTimerStrongToWeakMapTableProperty = &kAGTMTimerStrongToWeakMap
                             repeat:(AGTMRepeatBlock)repeatBlock
 {
     NSString *timerKey;
-    [self ag_prepareTaskTimer:&timerKey interval:ti delay:0.];
+    [self ag_prepareTaskTimer:&timerKey interval:ti delay:delay];
     [self ag_addTaskForTimer:timerKey taskToken:@"__AGRepeatTaskToken" repeat:repeatBlock completion:nil];
     [self ag_startTaskTimer:timerKey forMode:mode];
     return timerKey;
